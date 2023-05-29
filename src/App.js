@@ -10,7 +10,7 @@ function App() {
   return (
     <Router basename="/user-login-react-router-application">
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route path="/"  exact element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes>
