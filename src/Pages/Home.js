@@ -12,15 +12,15 @@ export default function Home() {
               <div className="text-center">
                 <img src={reactLogo} alt="React Logo" className="mb-4" style={{ width: "100px" }} />
               </div>
-              <h2 className="card-title mb-4">Welcome to the Homepage</h2>
-              <p className="card-text">
+              <h2 className="card-title mb-4" style={{textAlign: "center" , fontFamily: "monospace"}}>Welcome to the User Login React App </h2>
+              <p className="card-text" style={{textAlign: "center", fontFamily: "monospace"}}>
               You are on the Home page, you can log in or Sign up if you went, we are happy for you to join us.
               </p>
               <div className="text-center">
-                <Link to="/login" className="btn btn-primary me-3">
+                <Link to="/login" className="btn btn-primary btn-lg me-4" style={{fontFamily: "monospace"}}>
                   Login
                 </Link>
-                <Link to="/signup" className="btn btn-outline-primary">
+                <Link to="/signup" className="btn btn-outline-primary btn-lg" style={{fontFamily: "monospace"}}>
                   Sign Up
                 </Link>
               </div>

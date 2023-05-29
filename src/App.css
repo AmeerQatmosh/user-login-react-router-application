@@ -37,3 +37,14 @@ label {
   font-weight: 600;
   color: rgb(34, 34, 34);
 }
+
+
+.hover-text {
+  text-decoration: none;
+}
+
+.hover-text:hover {
+  text-decoration: underline;
+}
+
+
