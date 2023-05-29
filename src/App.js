@@ -6,18 +6,14 @@ import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
 import Home from "./Pages/Home";
 
-function App() {
-  return (
-    <Router basename="/user-login-react-router-application">
-      <Routes>
-        <Route path="/"  exact element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
-      </Routes>
-    </Router>
-  );
-}
+const App = () => (
+  <Router basename="/user-login-react-router-application">
+    <Routes>
+      <Route path="/" exact element={<Home />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<SignUp />} />
+    </Routes>
+  </Router>
+);
 
 export default App;
-
-
