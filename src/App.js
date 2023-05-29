@@ -8,7 +8,7 @@ import Home from "./Pages/Home";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/user-login-react-router-application">
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
