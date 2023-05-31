@@ -101,9 +101,6 @@ const Login = () => {
           </p>
           <div className="text-center mt-3">
             <button className="btn btn-outline-secondary btn-lg me-4" style={{ fontFamily: "monospace" }} onClick={handleHomeClick}>Back to Home</button>
-            <p>
-              <button className="hover-button" onClick={handleSignUpClick}>Sign Up</button>
-            </p>
           </div>
         </div>
       </form>
