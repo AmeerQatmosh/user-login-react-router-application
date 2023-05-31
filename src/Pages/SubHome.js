@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const SubHome = () => {
-  const [data, setdata] = useState("subhome");
+  const [data, setdata] = useState('');
 
   return (
     <div style={{display:"flex", justifyContent: "center", alignItems: "center", padding: "10px"}}>

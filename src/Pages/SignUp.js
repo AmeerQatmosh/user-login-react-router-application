@@ -1,8 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import reactLogo from "./logo192.png"; // Replace with your React logo image path
+import { useNavigate } from "react-router-dom";
+import reactLogo from "./reactlogo.png"; 
 
-const SignUp = () => (
+const SignUp = () => {
+
+  const navigate = useNavigate();
+
+  const handleHomeClick = () => {
+    navigate("/");
+  };
+
+  const handleLoginClick = () => {
+    navigate("/login");
+  };
+  return (
   <div className="Auth-form-container">
     <form className="Auth-form">
       <div className="Auth-form-content">
@@ -16,7 +27,7 @@ const SignUp = () => (
           Sign Up
         </h3>
         <div className="text-center">
-          Already registered? <Link to="/login" className="hover-text">Sign In Now</Link>
+          Already registered? <button className="hover-button" onClick={handleLoginClick}>Sign In Now</button>
         </div>
         <div className="form-floating mt-3">
           <input
@@ -58,13 +69,13 @@ const SignUp = () => (
           Forgot <a href="#" className="hover-text">Password?</a>
         </p>
         <div className="text-center mt-3">
-          <Link to="/" className="btn btn-outline-secondary">
-            Back to Home
-          </Link>
+
+        <button className="btn btn-outline-secondary btn-lg me-4" style={{ fontFamily: "monospace" }} onClick={handleHomeClick}>Back to Home</button>
         </div>
       </div>
     </form>
   </div>
 );
+}
 
 export default SignUp;

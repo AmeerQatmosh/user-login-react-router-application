@@ -47,4 +47,16 @@ label {
   text-decoration: underline;
 }
 
+.hover-button {
+  text-decoration: none;
+  color: #0D6EFD;
+  font-family: "monospace"; 
+  background-color: white;
+  border:0px;
+}
+
+.hover-button:hover {
+  text-decoration: underline;
+}
+
 

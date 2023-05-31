@@ -7,6 +7,7 @@ import SignUp from "./Pages/SignUp";
 import Home from "./Pages/Home";
 
 const App = () => (
+  
   <Router basename="/user-login-react-router-application">
     <Routes>
       <Route path="/" exact element={<Home />} />
@@ -17,3 +18,4 @@ const App = () => (
 );
 
 export default App;
+

@@ -1,11 +1,22 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import SubHome from "./SubHome";
-import reactLogo from "./logo192.png"; // Replace with your React logo image path
+import reactLogo from "./reactlogo.png";
+
 
 const Home = () => {
   const [data, setData] = useState("subhome");
   console.log("test", data);
+
+  const navigate = useNavigate();
+
+  const handleLoginClick = () => {
+    navigate("/login");
+  };
+
+  const handleSignUpClick = () => {
+    navigate("/signup");
+  };
 
   return (
     <div className="container">
@@ -27,12 +38,8 @@ const Home = () => {
                 You are on the Home page, you can log in or Sign up if you went, we are happy for you to join us.
               </p>
               <div className="text-center">
-                <Link to="/login" className="btn btn-primary btn-lg me-4" style={{ fontFamily: "monospace" }}>
-                  Login
-                </Link>
-                <Link to="/signup" className="btn btn-outline-primary btn-lg" style={{ fontFamily: "monospace" }}>
-                  Sign Up
-                </Link>
+              <button className="btn btn-primary btn-lg me-4" style={{ fontFamily: "monospace" }} onClick={handleLoginClick} >Login</button>
+              <button className="btn btn-primary btn-lg me-4" style={{ fontFamily: "monospace" }} onClick={handleSignUpClick}>Sign Up</button>
               </div>
               <SubHome data={data} setdata={setData} />
             </div>
